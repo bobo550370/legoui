@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="author" content="bobo">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="icon/square/_all.css">
+    <link rel="stylesheet" href="css/legoui.css">
+    <link rel="stylesheet" href="css/demo-scrollbar.css">
+
+    <style>
+/*        @import url(icon/square/_all.css);*/
+        body {background-color: #efefef;}
+        .lo-title {margin: 0 0 16px 0;}
+        #lo-radio-l label::before {
+          content: "";
+          width: .8rem;
+          height: .8rem;
+          border: 1px #999 solid;
+          -webkit-border-radius: 2px;
+          margin-right: .6rem;
+        }
+        input[type="checkbox"]+label, input[type="radio"]+label {
+            justify-content: flex-start;
+/*            justify-content: space-between;*/
+            align-items: center;
+            width: 100%;
+            /* -webkit-box-sizing: border-box; */
+        }
+    </style>
+
+</head>
+    
+<body>
+    
+<!--
+    <div class="demo-title">
+        <div class="demo-title-en">Agreement</div>
+        <div class="demo-title-cn">协议</div>
+    </div>
+-->
+    
+    <header></header>
+    <div class="content ">
+
+        <div class="lo-h-44"></div>
+        
+        <div id="lo-radio-l" class="lo-list lo-b-5">
+        <input type="checkbox" value="guangpan" name="choose" id="lo-Agree">
+        <label for="lo-Agree" class="lo-agreement lo-h-32 lo-gutter">
+            <input id="lo-Agree" type="checkbox" class="">
+            <span class="lo-c-6">
+                我已阅读并同意<a class="lo-c-1" href="#">《一卡通协议》</a>
+            </span>
+        </label>
+        </div>
+        
+        <div class="lo-h-16"></div>
+        
+        <div class="lo-title lo-t-center lo-gutter-right lo-b-5">
+            设置支付密码
+        </div>
+        
+        <div class="lo-title lo-gutter-right lo-b-5">
+            注册账号
+        </div>
+    </div>
+    
+<!--    <footer></footer>-->
+    
+<!--    <script src="js/jquery-3.2.1.min.js"></script>-->
+    <script src="js/zepto.min.js"></script>
+    <script src="js/icheck.min.js"></script>    
+    <script>
+        $(document).ready(function() {
+            $('.lo-square input').iCheck({
+                checkboxClass: 'icheckbox_square-blue',
+                radioClass: 'iradio_square-blue',
+                increaseArea: '20%'
+            });
+        });
+    </script>
+    
+</body>
+</html>
