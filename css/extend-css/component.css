@@ -43,11 +43,13 @@ html,body {
 	-webkit-transition: opacity 0.2s;
 	transition: opacity 0.2s;
 }
+/*
 .grid li:hover figure {
     box-shadow: 0 0 0 8px rgba(0,0,0,0.03);
     border-radius: 8px;
     background-color: rgba(0,0,0,0.03);
 }
+*/
 .grid figcaption {
     display: flex;
     align-items: center;
