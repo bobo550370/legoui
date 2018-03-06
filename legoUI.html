@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">    
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Grid Gallery</title>
+<head>    
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="author" content="bobo">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
     <meta name="author" content="Codrops" />
-    <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/extend-css/demo.css" />
     <link rel="stylesheet" type="text/css" href="css/extend-css/component.css" />
     <link rel="stylesheet" type="text/css" href="css/demo-scrollbar.css">
@@ -14,14 +16,16 @@
     <style>
         html,body {background-color: #fff;}
         body {font-size: 20px;}
-        .header {
+        .header,
+        .footer {
             position: fixed;
-            top: 0;
             width: 100%;
-            height: 65px;
             background-color: #fff;
             z-index: 1;
         }
+        .header {top: 0;height: 65px;}
+        .footer {bottom: 0;height: 54px;}
+        
         figcaption {
             display: -webkit-box;     
             display: -webkit-flex;     
@@ -167,7 +171,6 @@
                             <iframe src="page-icon.html" class="iframe-size iframe-1"></iframe>
                         </figure>
                     </li>
-
                     <li>
                         <figure>
                             <figcaption>
@@ -180,7 +183,6 @@
 
                         </figure>
                     </li>
-
                     <li>
                         <figure>
 
@@ -193,7 +195,6 @@
                             <iframe src="page-navigation-bar.html" class="iframe-size iframe-3" scrolling="yes"></iframe>
                         </figure>
                     </li>
-
                     <li>
                         <figure>
                             <figcaption>
@@ -206,7 +207,6 @@
 
                         </figure>
                     </li>
-
                     <li>
                         <figure>
                             <figcaption>
@@ -220,7 +220,6 @@
                         </figure>
 
                     </li>
-
                     <li>
                         <figure>
                             <figcaption>
@@ -230,11 +229,8 @@
                                 <a>查看</a>
                             </figcaption>
                             <iframe src="page-empty.html" class="iframe-size iframe-6" scrolling="yes"></iframe>
-
                         </figure>
-
                     </li>
-
                     <li>
                         <figure>
                             <figcaption>
@@ -244,12 +240,8 @@
                                 <a>查看</a>
                             </figcaption>
                             <iframe src="page-icon.html" class="iframe-size iframe-7"></iframe>
-
                         </figure>
-
-
                     </li>
-
                     <li>
                         <figure>
                             <figcaption>
@@ -262,7 +254,6 @@
 
                         </figure>
                     </li>
-
                     <li>
                         <figure>
                             <figcaption>
@@ -275,7 +266,6 @@
 
                         </figure>
                     </li>
-
                     <li>
                         <figure>
                             <figcaption>
@@ -287,7 +277,6 @@
                             <iframe src="page-list-grid.html" class="iframe-size iframe-10" scrolling="yes"></iframe>
                         </figure>
                     </li>
-
                     <li>
                         <figure>
                             <figcaption>
@@ -300,7 +289,6 @@
 
                         </figure>
                     </li>
-
                     <li>
                         <figure>
                             <figcaption>
@@ -313,7 +301,6 @@
 
                         </figure>
                     </li>
-
                     <li>
                         <figure>
                             <figcaption>
@@ -326,7 +313,6 @@
 
                         </figure>
                     </li>
-
                     <li>
                         <figure>
                             <figcaption>
@@ -339,7 +325,6 @@
 
                         </figure>
                     </li>
-
                     <li>
                         <figure>
                             <figcaption>
@@ -352,7 +337,6 @@
 
                         </figure>
                     </li>
-
                     <li>
                         <figure>
                             <figcaption>
@@ -365,8 +349,6 @@
 
                         </figure>
                     </li>
-
-
                     <li>
                         <figure>
                             <figcaption>
@@ -381,9 +363,7 @@
                     </li>
                 </ul>
             </section>
-
-
-
+            
             <!-- // grid-wrap -->
             <section class="slideshow">
                 <ul>
@@ -643,6 +623,11 @@
         </div>
         <!-- // grid-gallery -->
     </div>
+    <footer>
+        <div class="footer" style="display: none">
+            <div class="lo-navbar"></div>
+        </div>
+    </footer>
     <script src="js/extend-js/imagesloaded.pkgd.min.js"></script>
     <script src="js/extend-js/masonry.pkgd.min.js"></script>
     <script src="js/extend-js/classie.js"></script>
@@ -652,6 +637,7 @@
         
         $('#grid-li li').mouseover(function(){$(this).find('a').addClass('activ')});
         $('#grid-li li').mouseout(function(){$(this).find('a').removeClass('activ')});
+
         
         var a = document.getElementsByTagName('a');
         for (var i = 0; i < a.length; i++) {
