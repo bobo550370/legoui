@@ -52,10 +52,11 @@ html,body {
 }
 */
 .grid figcaption {
+	height: 200px;
     display: flex;
     align-items: center;
 	background: #efefef;
-	padding: 32px 16px 32px 16px;
+/* 	padding: 32px 16px 32px 16px; */
 }
 /* Slideshow style */
 .slideshow {
