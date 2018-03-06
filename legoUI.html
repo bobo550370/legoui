@@ -91,11 +91,13 @@
             border-width: 1px 0 0;
         }
         .lo-navbar {
+            width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             height: 64px;
             padding: 0 16px;
+            z-index: 100;
         }
         .bg-60 {
             width: 100%;
@@ -114,19 +116,17 @@
             width: 48px;
             height: 48px;
             border-radius: 50%;
-            background-color: #
-            
+            background-color: #999;
         }
         .com-more:hover {
             background-color: #efefef;
         }
         iframe {border-radius: 0 0 8px 8px;} 
-        figcaption {
-        }
+        figcaption {}
         .slideshow figcaption {
             display: flex;
             border-radius: 8px;
-            padding: 40px;
+/*            padding: 40px;*/
         }
         .slideshow iframe {
             border-radius: 8px;
@@ -136,7 +136,16 @@
             font-size: .8rem;
             padding: 0 32px;
         }
-        
+        @media only screen and (min-width: 320px) {
+            figcaption {padding: 0px 0px 0px 0px;}
+            .slideshow p {padding: 0;}
+            .bg-60 {height: 64px;}
+            .container {margin: 64px 0 0 0;}
+            .lo-navbar {
+                background: rgba(255,255,255,.9);
+                position: fixed;
+            }
+        }
     </style>
 </head>
 
@@ -366,13 +375,13 @@
             
             <!-- // grid-wrap -->
             <section class="slideshow">
+                <div class="lo-navbar "></div>
                 <ul>
                     <li>
                         <figure>
                             <div class="bg-60"></div>
                             <figcaption>
                                 <iframe src="page-icon.html" class="iframe-size iframe-1"></iframe>
-                                <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus.</p>
                             </figcaption>
                             <div class="bg-60"></div>
                         </figure>
@@ -383,7 +392,7 @@
                             
                             <figcaption>
                                 <iframe src="page-agreement.html" class="iframe-size iframe-2" scrolling="yes"></iframe>
-                                <p>Chillwave Echo Park Etsy organic Cosby sweater seitan authentic pour-over. Occupy wolf selvage bespoke tattooed, cred sustainable Odd Future hashtag butcher.</p>
+                                <p>Chillwave Echo Park Etsy organic Cosby sweater seitan authentic pour-over. Occupy wolf selvage bespoke tattooed, cred sustainable Odd Future hashtag butcher.Chillwave Echo Park Etsy organic Cosby sweater seitan authentic pour-over. Occupy wolf selvage bespoke tattooed, cred sustainable Odd Future hashtag butcher.Chillwave Echo Park Etsy organic Cosby sweater seitan authentic pour-over. Occupy wolf selvage bespoke tattooed, cred sustainable Odd Future hashtag butcher.Chillwave Echo Park Etsy organic Cosby sweater seitan authentic pour-over. Occupy wolf selvage bespoke tattooed, cred sustainable Odd Future hashtag butcher.</p>
                             </figcaption>
                             <div class="bg-60"></div>
                         </figure>

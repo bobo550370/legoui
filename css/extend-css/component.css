@@ -99,7 +99,6 @@ html,body {
     width: 86%;
     height: 100%;
     position: absolute;
-/*    top: 10%;*/
     left: 7%;
     margin: 0 0 0 0;
     visibility: hidden;
@@ -232,6 +231,26 @@ iframe {border-width: 0;display: block;}
 		width: 50%;
         padding: 8px;
 	}
+    .slideshow nav span.nav-prev,
+    .slideshow nav span.nav-next {
+    top: 53%;
+    width: 16px;
+    height: 100%;
+    }
+    .slideshow li {
+    width: 100%;
+    left: 0;
+    padding: 0 16px;
+    margin: 0 0 0 0;
+    }
+    .slideshow figcaption {
+    flex-direction: column;
+    }
+    .slideshow {background-color: rgb(255,255,255);}
+    .slideshow nav span.nav-close {
+    left: 8px;
+    top: 10px;
+    }    
 }
 @media only screen and (min-width: 375px) {
     iframe {width: 100%;}
@@ -275,6 +294,20 @@ iframe {border-width: 0;display: block;}
 		width: 50%;
         padding: 8px;
 	}
+    .slideshow nav span.nav-prev,
+    .slideshow nav span.nav-next {
+    top: 53%;
+    width: 10%;
+    height: 96%;
+    }
+    .slideshow li {
+    width: 100%;
+    left: 0;
+    padding: 0 16px;
+    margin: 0 0 0 0;
+    }
+    .slideshow{background-color: rgb(238, 238, 238);}
+    .slideshow figcaption {flex-direction: row;}
 }
 @media only screen and (min-width: 1056px) {
     .grid-wrap {width: 1056px;}
