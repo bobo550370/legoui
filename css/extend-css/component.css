@@ -35,6 +35,7 @@ html,body {
 }
 .grid {margin: 0 auto;}
 .grid li {
+    width: 320px;
 	float: left;
 	cursor: pointer;
     border-radius: 8px;
